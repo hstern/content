@@ -3359,7 +3359,7 @@ def panorama_create_edl_command():
 
     edl_output = {
         'Name': edl_name,
-        'URL': url,
+        'URL': url.replace(' ', '%20'),
         'Type': type_,
         'Recurring': recurring
     }
